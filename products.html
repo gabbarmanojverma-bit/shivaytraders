@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse Shivay Traders wholesale imitation jewellery products by category and enquire on WhatsApp.">
+  <meta name="theme-color" content="#f7f3eb">
+  <title>Products | Shivay Traders</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Manrope:wght@400;500;600;700&family=Noto+Serif+Devanagari:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=4">
+  <style id="mobile-spacing-fix">
+    @media (max-width: 768px) {
+      body.products-page .products-hero {
+        min-height: 0 !important;
+        margin: 0 !important;
+        padding: 28px 0 18px !important;
+      }
+
+      body.products-page .products-hero-grid {
+        width: var(--container) !important;
+        margin: 0 auto !important;
+        padding: 0 !important;
+      }
+
+      body.products-page .products-catalogue {
+        margin: 0 !important;
+        padding: 0 0 80px !important;
+      }
+
+      body.products-page .products-catalogue > .container {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+      }
+
+      body.products-page .filter-wrap {
+        margin: 14px 0 30px !important;
+      }
+    }
+  </style>
+</head>
+<body class="products-page">
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>Wholesale Only</span><i></i><span>Contact for Price</span><i></i><span>Pan-India Delivery</span>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Shivay Traders home">
+        <span class="brand-mark">ST</span>
+        <span class="brand-copy"><strong>Shivay Traders</strong><small>Wholesaler</small></span>
+      </a>
+      <button class="menu-button" aria-label="Open menu" aria-expanded="false"><b></b><b></b><b></b></button>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="index.html#categories">Categories</a>
+        <a class="active" href="products.html">Products</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <a class="btn btn-gold desktop-cta js-wa" href="#" target="_blank" rel="noopener">WhatsApp Enquiry</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="products-hero">
+      <div class="products-hero-glow"></div>
+      <div class="container products-hero-grid">
+        <div class="reveal">
+          <div class="hero-kicker"><span></span><p>Wholesale catalogue</p></div>
+          <h1>Find the right products for <em>your store.</em></h1>
+          <p>Browse all categories, filter the catalogue and enquire for wholesale pricing directly on WhatsApp.</p>
+        </div>
+        <div class="products-hero-badge reveal">
+          <span>ॐ</span>
+          <div><small>Shivay Traders</small><strong>Product Catalogue</strong><p>Wholesale only · No online checkout</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="products-catalogue">
+      <div class="container">
+
+
+        <div class="filter-wrap reveal">
+          <div class="filter-label"><span>Filter by category</span><button id="clearFilters" type="button">Clear</button></div>
+          <div class="filter-pills" id="categoryFilters" aria-label="Product categories"></div>
+        </div>
+
+        <div class="product-grid catalogue-grid" id="productsGrid"></div>
+
+        <div class="empty-state" id="emptyState" hidden>
+          <span>◌</span>
+          <h3>No products found</h3>
+          <p>Try another category or clear the search.</p>
+          <button class="btn btn-dark" id="resetProducts" type="button">Show All Products</button>
+        </div>
+
+        <div class="catalogue-bottom reveal">
+          <div><small>Need a specific design?</small><h3>Send us a direct WhatsApp enquiry.</h3><p>Share your preferred category or product code and we will assist with price and availability.</p></div>
+          <a class="btn btn-gold js-wa" href="#" target="_blank" rel="noopener">Enquire on WhatsApp</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div><a class="brand footer-brand" href="index.html"><span class="brand-mark">ST</span><span class="brand-copy"><strong>Shivay Traders</strong><small>Wholesaler</small></span></a><p>Wholesale imitation jewellery catalogue for business buyers across India.</p></div>
+      <div><h3>Explore</h3><a href="index.html">Home</a><a href="products.html">Products</a><a href="index.html#about">About</a><a href="index.html#contact">Contact</a></div>
+      <div><h3>Contact</h3><a href="tel:+919412502311">+91 94125 02311</a><p>All Days, 9 AM–10 PM</p><p>Haridwar, Uttarakhand</p></div>
+    </div>
+    <div class="container footer-bottom"><p>© <span id="year"></span> Shivay Traders. All rights reserved.</p><p class="footer-mantra">ॐ नमः शिवाय</p></div>
+  </footer>
+
+  <a class="floating-wa js-wa" href="#" target="_blank" rel="noopener" aria-label="WhatsApp enquiry">WA</a>
+  <script src="js/products.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
+
+

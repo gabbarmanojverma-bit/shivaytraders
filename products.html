@@ -9,7 +9,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Manrope:wght@400;500;600;700&family=Noto+Serif+Devanagari:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=4">
+  <link rel="stylesheet" href="css/style.css?v=5">
+  <link rel="stylesheet" href="css/products-fix.css?v=1">
   <style id="mobile-spacing-fix">
     @media (max-width: 768px) {
       body.products-page .products-hero {
@@ -49,10 +50,20 @@
 
   <header class="header">
     <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="Shivay Traders home">
-        <span class="brand-mark">ST</span>
-        <span class="brand-copy"><strong>Shivay Traders</strong><small>Wholesaler</small></span>
-      </a>
+<a class="brand" href="index.html" aria-label="Shivay Traders home">
+  <span class="brand-mark brand-logo-mark">
+    <img
+      src="assets/logo/shivay-icon.png"
+      alt=""
+      aria-hidden="true"
+    >
+  </span>
+
+  <span class="brand-copy">
+    <strong>Shivay Traders</strong>
+    <small>Wholesaler</small>
+  </span>
+</a>
       <button class="menu-button" aria-label="Open menu" aria-expanded="false"><b></b><b></b><b></b></button>
       <nav class="nav" aria-label="Primary navigation">
         <a href="index.html">Home</a>
@@ -76,7 +87,7 @@
         </div>
         <div class="products-hero-badge reveal">
           <span>ॐ</span>
-          <div><small>Shivay Traders</small><strong>Product Catalogue</strong><p>Wholesale only · No online checkout</p></div>
+          <div><small>Product Catalogue</small><strong>Shivay Traders</strong><p>Wholesale only · No online checkout</p></div>
         </div>
       </div>
     </section>
@@ -107,16 +118,114 @@
     </section>
   </main>
 
-  <footer>
-    <div class="container footer-grid">
-      <div><a class="brand footer-brand" href="index.html"><span class="brand-mark">ST</span><span class="brand-copy"><strong>Shivay Traders</strong><small>Wholesaler</small></span></a><p>Wholesale imitation jewellery catalogue for business buyers across India.</p></div>
-      <div><h3>Explore</h3><a href="index.html">Home</a><a href="products.html">Products</a><a href="index.html#about">About</a><a href="index.html#contact">Contact</a></div>
-      <div><h3>Contact</h3><a href="tel:+919412502311">+91 94125 02311</a><p>All Days, 9 AM–10 PM</p><p>Haridwar, Uttarakhand</p></div>
-    </div>
-    <div class="container footer-bottom"><p>© <span id="year"></span> Shivay Traders. All rights reserved.</p><p class="footer-mantra">ॐ नमः शिवाय</p></div>
-  </footer>
+ <footer>
+  <div class="container footer-grid">
 
-  <a class="floating-wa js-wa" href="#" target="_blank" rel="noopener" aria-label="WhatsApp enquiry">WA</a>
+    <!-- Shivay Traders + Owner Photo -->
+    <div class="footer-business">
+
+      <img
+        src="assets/images/manoj-verma.jpeg"
+        alt="Manoj Verma - Shivay Traders"
+        class="footer-owner-photo"
+      >
+
+      <div class="footer-business-info">
+
+        <a class="brand" href="index.html" aria-label="Shivay Traders home">
+
+          <span class="brand-mark brand-logo-mark">
+            <img
+              src="assets/logo/shivay-icon.png"
+              alt=""
+              aria-hidden="true"
+            >
+          </span>
+
+          <span class="brand-copy">
+            <strong>Shivay Traders</strong>
+            <small>Wholesaler</small>
+          </span>
+
+        </a>
+
+        <p>
+          Wholesale imitation jewellery catalogue for business buyers across India.
+        </p>
+
+        <span class="footer-owner-name">
+          Manoj Verma
+        </span>
+
+      </div>
+
+    </div>
+
+
+    <!-- Explore -->
+<div class="footer-explore-wrap">
+
+  <div class="footer-explore-links">
+    <h3>Explore</h3>
+
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <div class="footer-mobile-owner">
+    <img
+      src="assets/images/manoj-verma.jpeg"
+      alt="Manoj Verma - Shivay Traders"
+    >
+
+    <span>Manoj Verma</span>
+  </div>
+
+</div>
+
+
+    <!-- Contact -->
+    <div>
+      <h3>Contact</h3>
+
+      <a href="tel:+919412502311">
+        +91 94125 02311
+      </a>
+
+      <p>All Days, 9 AM–10 PM</p>
+
+      <p>
+        <a
+          href="https://maps.app.goo.gl/9w15sXj8QwE8VyeB7?g_st=ac"
+          target="_blank"
+          rel="noopener"
+        >
+          Mimi House, Kangda Mandir, Near Har Ki Pauri,<br>
+          Haridwar, Uttarakhand
+        </a>
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <div class="container footer-bottom">
+
+    <p>
+      © <span id="year"></span> Shivay Traders. All rights reserved.
+    </p>
+
+    <p class="footer-mantra">
+      ॐ नमः शिवाय
+    </p>
+
+  </div>
+</footer>
+
+ 
   <script src="js/products.js"></script>
   <script src="js/script.js"></script>
 </body>

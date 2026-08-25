@@ -1,0 +1,105 @@
+/* =========================================================
+   SHIVAY TRADERS — PRODUCTS PAGE ENQUIRY BUTTON FIX
+   Load this file AFTER css/style.css
+========================================================= */
+
+body.products-page .catalogue-card {
+  height: auto !important;
+  min-height: 0 !important;
+}
+
+body.products-page .catalogue-info {
+  height: auto !important;
+  min-height: 0 !important;
+  padding: 24px 24px 30px !important;
+  box-sizing: border-box !important;
+}
+
+body.products-page .catalogue-actions {
+  display: block !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+}
+
+body.products-page .catalogue-actions > span {
+  display: block !important;
+  width: 100% !important;
+  margin: 0 0 14px !important;
+  padding: 0 !important;
+}
+
+body.products-page .catalogue-action-buttons {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 10px !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+}
+
+body.products-page .catalogue-action-buttons > button,
+body.products-page .single-enquiry-btn,
+body.products-page .add-enquiry-btn {
+  position: static !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  height: 50px !important;
+  min-height: 50px !important;
+
+  margin: 0 !important;
+  padding: 0 8px !important;
+  box-sizing: border-box !important;
+
+  border-radius: 12px !important;
+  border: 1px solid rgba(21, 19, 15, 0.28) !important;
+  background: #fff !important;
+  color: var(--ink) !important;
+
+  line-height: 1 !important;
+  white-space: nowrap !important;
+  text-align: center !important;
+  transform: none !important;
+}
+
+body.products-page .add-enquiry-btn {
+  border-color: var(--ink) !important;
+}
+
+body.products-page .add-enquiry-btn.added,
+body.products-page .add-enquiry-btn:disabled {
+  border-color: rgba(184, 135, 47, 0.45) !important;
+  color: var(--gold-deep) !important;
+  background: #f7f3eb !important;
+}
+
+/* Products page does not need the floating WhatsApp circle */
+body.products-page .floating-wa {
+  display: none !important;
+}
+
+@media (max-width: 520px) {
+  body.products-page .catalogue-info {
+    padding: 20px 18px 28px !important;
+  }
+
+  body.products-page .catalogue-action-buttons {
+    gap: 8px !important;
+  }
+
+  body.products-page .catalogue-action-buttons > button,
+  body.products-page .single-enquiry-btn,
+  body.products-page .add-enquiry-btn {
+    height: 48px !important;
+    min-height: 48px !important;
+    padding: 0 5px !important;
+    font-size: 0.62rem !important;
+  }
+}

@@ -1,7 +1,7 @@
 window.SHIVAY_PRODUCTS = [
   // Bangles
   { name: "Bangles", code: "ST-BG-001", category: "Bangles", image: "assets/products/bangles/st-bg-001.webp", alt: "Bangles wholesale product ST-BG-001 - Shivay Traders" },
-  { name: "Bangles", code: "ST-BG-002", category: "Bangles", image: "assets/products/bangles/st-bg-002.webp", alt: "Bangles wholesale product ST-BG-002 - Shivay Traders" },
+
 
   // Bracelets
   { name: "Bracelet", code: "ST-BR-001", category: "Bracelets", image: "assets/products/bracelets/st-br-001.webp", alt: "Bracelet wholesale product ST-BR-001 - Shivay Traders" },

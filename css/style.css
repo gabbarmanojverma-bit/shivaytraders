@@ -1221,3 +1221,1022 @@ footer { padding: 76px 0 22px; color: rgba(255,255,255,0.65); background: #0d0c0
     margin-right: auto !important;
   }
 }
+/* =========================================================
+   SHIVAY TRADERS — HEADER LOGO FINAL FIX
+   Keeps original desktop + mobile header layout intact
+========================================================= */
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 13px;
+  flex-shrink: 0;
+}
+
+/* Existing circular logo position */
+.brand-mark.brand-logo-mark {
+  position: relative;
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+  overflow: hidden;
+
+  border: 0;
+  border-radius: 50%;
+  background: #ffffff;
+
+  flex: 0 0 48px;
+}
+
+/* Remove old ST circle pseudo border */
+.brand-mark.brand-logo-mark::after {
+  display: none;
+}
+
+/* Actual logo image */
+.brand-logo-mark img {
+  width: 100%;
+  height: 100%;
+  display: block;
+
+  object-fit: contain;
+  object-position: center;
+
+  border-radius: 50%;
+}
+
+/* Brand text stays exactly like old header */
+.brand-copy {
+  display: grid;
+  line-height: 1.12;
+  white-space: nowrap;
+}
+
+.brand-copy strong {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.48rem;
+  font-weight: 700;
+}
+
+.brand-copy small {
+  margin-top: 5px;
+  color: var(--muted);
+  font-size: 0.54rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1080px) {
+
+  .brand {
+    gap: 11px;
+  }
+
+  .brand-mark.brand-logo-mark {
+    width: 46px;
+    height: 46px;
+    flex-basis: 46px;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .brand {
+    gap: 9px;
+    min-width: 0;
+  }
+
+  .brand-mark.brand-logo-mark {
+    width: 42px;
+    height: 42px;
+    flex: 0 0 42px;
+  }
+
+  .brand-copy strong {
+    font-size: 1.20rem;
+  }
+
+  .brand-copy small {
+    margin-top: 3px;
+    font-size: 0.46rem;
+    letter-spacing: 0.12em;
+  }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+  .brand-mark.brand-logo-mark {
+    width: 41px;
+    height: 41px;
+    flex: 0 0 41px;
+  }
+
+  .brand-copy strong {
+    font-size: 1.08rem;
+  }
+
+  .brand-copy small {
+    font-size: 0.42rem;
+  }
+}
+
+/* =========================================================
+   SHIVAY TRADERS — ABOUT + FOOTER OWNER PHOTOS
+========================================================= */
+
+
+/* ---------- ABOUT SHOP PHOTO ---------- */
+
+.about-photo-card {
+  position: relative;
+  min-height: 600px;
+  padding: 0;
+  overflow: hidden;
+
+  border-radius: 280px 280px 30px 30px;
+
+  background: #17140f;
+  box-shadow: var(--shadow);
+}
+
+.about-shop-photo {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  display: block;
+  object-fit: cover;
+  object-position: center;
+
+  border-radius: inherit;
+}
+
+.about-photo-shade {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(10, 9, 7, 0.05) 25%,
+      rgba(10, 9, 7, 0.30) 62%,
+      rgba(10, 9, 7, 0.78) 100%
+    );
+}
+
+.about-photo-card::after {
+  content: "";
+  position: absolute;
+  inset: 20px;
+  z-index: 2;
+
+  border: 1px solid rgba(217, 191, 138, 0.42);
+  border-radius: 260px 260px 22px 22px;
+
+  pointer-events: none;
+}
+
+.about-photo-text {
+  position: absolute;
+  left: 40px;
+  right: 40px;
+  bottom: 48px;
+  z-index: 3;
+
+  color: white;
+}
+
+.about-photo-text .about-om {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: var(--champagne);
+  font-size: 3.2rem;
+  line-height: 1;
+}
+
+.about-photo-text p {
+  max-width: 300px;
+  margin: 0;
+
+  color: rgba(255,255,255,.87);
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.32rem;
+  line-height: 1.35;
+}
+
+
+/* Manoj Verma badge */
+
+.about-photo-card .owner {
+  right: -34px;
+  bottom: 48px;
+  z-index: 5;
+}
+
+
+/* ---------- FOOTER OWNER PHOTO ---------- */
+
+.footer-business {
+  display: flex;
+  align-items: flex-start;
+  gap: 22px;
+}
+
+.footer-owner-photo {
+  width: 118px;
+  height: 145px;
+
+  flex: 0 0 118px;
+
+  display: block;
+
+  object-fit: cover;
+  object-position: center 30%;
+
+  border: 1px solid rgba(217, 191, 138, 0.34);
+  border-radius: 18px;
+
+  box-shadow:
+    0 14px 34px rgba(0,0,0,.30);
+}
+
+.footer-business-info {
+  min-width: 0;
+}
+
+.footer-business-info > p {
+  max-width: 320px;
+}
+
+.footer-owner-name {
+  display: inline-block;
+
+  margin-top: 5px;
+
+  color: var(--champagne);
+
+  font-size: .65rem;
+  font-weight: 600;
+  letter-spacing: .11em;
+
+  text-transform: uppercase;
+}
+
+
+/* ---------- TABLET ---------- */
+
+@media (max-width: 1080px) {
+
+  .about-photo-card {
+    min-height: 560px;
+  }
+
+  .about-photo-card .owner {
+    right: 18px;
+    bottom: 24px;
+  }
+
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 768px) {
+
+  .about-photo-card {
+    min-height: 500px;
+
+    border-radius: 180px 180px 26px 26px;
+  }
+
+  .about-photo-card::after {
+    inset: 14px;
+
+    border-radius: 170px 170px 19px 19px;
+  }
+
+  .about-shop-photo {
+    object-position: center;
+  }
+
+  .about-photo-text {
+    left: 28px;
+    right: 28px;
+    bottom: 100px;
+  }
+
+  .about-photo-text .about-om {
+    font-size: 2.5rem;
+  }
+
+  .about-photo-text p {
+    max-width: 240px;
+    font-size: 1.12rem;
+  }
+
+  .about-photo-card .owner {
+    left: 24px;
+    right: auto;
+    bottom: 24px;
+
+    min-width: 180px;
+  }
+
+
+  /* Footer */
+
+  .footer-business {
+    align-items: center;
+    gap: 17px;
+  }
+
+  .footer-owner-photo {
+    width: 92px;
+    height: 112px;
+
+    flex-basis: 92px;
+
+    border-radius: 15px;
+  }
+
+}
+
+
+/* ---------- VERY SMALL MOBILE ---------- */
+
+@media (max-width: 480px) {
+
+  .footer-business {
+    align-items: flex-start;
+  }
+
+  .footer-owner-photo {
+    width: 82px;
+    height: 100px;
+
+    flex-basis: 82px;
+  }
+
+  .footer-business-info .brand-copy strong {
+    font-size: 1.15rem;
+  }
+
+}
+
+/* =========================================================
+   FOOTER - MOBILE OWNER PHOTO BESIDE EXPLORE
+========================================================= */
+
+.footer-explore-wrap {
+  display: block;
+}
+
+.footer-explore-links {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Desktop par extra photo hide */
+.footer-mobile-owner {
+  display: none;
+}
+
+
+/* =========================
+   TABLET + MOBILE
+========================= */
+
+@media (max-width: 900px) {
+
+  .footer-explore-wrap {
+    display: grid;
+    grid-template-columns: 1fr 145px;
+    align-items: start;
+    gap: 28px;
+    width: 100%;
+  }
+
+  .footer-explore-links {
+    min-width: 0;
+  }
+
+  .footer-mobile-owner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+  }
+
+  .footer-mobile-owner img {
+    width: 135px;
+    height: 160px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 14px;
+    border: 1px solid rgba(198, 151, 65, 0.45);
+  }
+
+  .footer-mobile-owner span {
+    font-size: 11px;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    color: #d6ad63;
+    text-align: center;
+  }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+  .footer-explore-wrap {
+    grid-template-columns: 1fr 125px;
+    gap: 20px;
+  }
+
+  .footer-mobile-owner img {
+    width: 120px;
+    height: 145px;
+    border-radius: 12px;
+  }
+
+  .footer-mobile-owner span {
+    font-size: 10px;
+    letter-spacing: 1.4px;
+  }
+}
+
+/* =========================================
+   FOOTER EXPLORE + OWNER PHOTO
+========================================= */
+
+.footer-explore-row {
+  display: block;
+}
+
+.footer-mobile-owner {
+  display: none;
+}
+
+
+/* Tablet + Mobile */
+@media (max-width: 900px) {
+
+  .footer-explore-row {
+    display: grid;
+    grid-template-columns: 1fr 150px;
+    gap: 24px;
+    align-items: start;
+    width: 100%;
+  }
+
+  .footer-explore-links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-explore-links h3 {
+    margin-top: 0;
+  }
+
+  .footer-mobile-owner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+
+  .footer-mobile-owner img {
+    width: 140px;
+    height: 175px;
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+
+    border-radius: 18px;
+    border: 1px solid rgba(198, 145, 44, 0.65);
+
+    box-shadow:
+      0 10px 30px rgba(0, 0, 0, 0.35);
+  }
+
+  .footer-mobile-owner span {
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #c99a45;
+    text-align: center;
+    white-space: nowrap;
+  }
+}
+
+
+/* Small Mobile */
+@media (max-width: 520px) {
+
+  .footer-explore-row {
+    grid-template-columns: 1fr 135px;
+    gap: 16px;
+  }
+
+  .footer-mobile-owner img {
+    width: 125px;
+    height: 160px;
+    border-radius: 16px;
+  }
+
+  .footer-mobile-owner span {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+  }
+}/* Hide top footer owner photo on tablet + mobile */
+@media (max-width: 900px) {
+  .footer-owner-photo {
+    display: none !important;
+  }
+}
+
+/* ==================================================
+   PRODUCT CARD - SINGLE + MULTI ENQUIRY
+================================================== */
+
+.catalogue-actions {
+  display: block;
+}
+
+.catalogue-actions > span {
+  display: block;
+  margin-bottom: 13px;
+  color: var(--gold-deep);
+  font-size: 0.74rem;
+  font-weight: 700;
+}
+
+.catalogue-action-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.catalogue-action-buttons button {
+  min-height: 42px;
+  padding: 10px 12px;
+
+  border-radius: 10px;
+  border-bottom: 0;
+
+  font-family: inherit;
+  font-size: 0.70rem;
+  font-weight: 700;
+
+  cursor: pointer;
+  transition: 180ms ease;
+}
+
+
+/* Single product enquiry */
+
+.single-enquiry-btn {
+  border: 1px solid rgba(21, 19, 15, 0.25);
+  color: var(--ink);
+  background: transparent;
+}
+
+.single-enquiry-btn:hover {
+  border-color: var(--gold);
+  color: var(--gold-deep);
+}
+
+
+/* Add to enquiry */
+
+.add-enquiry-btn {
+  border: 1px solid var(--ink);
+  color: #fff;
+  background: var(--ink);
+}
+
+.add-enquiry-btn:hover {
+  transform: translateY(-1px);
+  background: var(--gold-deep);
+  border-color: var(--gold-deep);
+}
+
+.add-enquiry-btn.added,
+.add-enquiry-btn:disabled {
+  color: var(--gold-deep);
+  border-color: rgba(184, 135, 47, 0.35);
+  background: #f7f3eb;
+  cursor: default;
+}
+
+
+/* ==================================================
+   ENQUIRY LIST FLOATING BUTTON
+================================================== */
+
+.enquiry-list-fab {
+  position: fixed;
+
+  right: 22px;
+  bottom: 94px;
+
+  z-index: 90;
+
+  min-height: 48px;
+
+  padding: 0 17px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  border: 1px solid rgba(184, 135, 47, 0.45);
+  border-radius: 999px;
+
+  color: #fff;
+  background: #171510;
+
+  box-shadow:
+    0 12px 32px rgba(0, 0, 0, 0.22);
+
+  font-size: 0.72rem;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.enquiry-list-fab[hidden] {
+  display: none !important;
+}
+
+.enquiry-list-fab span {
+  min-width: 25px;
+  height: 25px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+
+  color: #171510;
+  background: var(--champagne);
+
+  font-size: 0.68rem;
+  font-weight: 800;
+}
+
+
+@keyframes enquiryPop {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.08);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.enquiry-added-pop {
+  animation: enquiryPop 280ms ease;
+}
+
+
+/* ==================================================
+   ENQUIRY DRAWER
+================================================== */
+
+.enquiry-drawer-backdrop {
+  position: fixed;
+  inset: 0;
+
+  z-index: 198;
+
+  background: rgba(0, 0, 0, 0.46);
+  backdrop-filter: blur(3px);
+}
+
+.enquiry-drawer-backdrop[hidden] {
+  display: none !important;
+}
+
+
+.enquiry-drawer {
+  position: fixed;
+
+  top: 0;
+  right: 0;
+
+  z-index: 199;
+
+  width: min(430px, 94vw);
+  height: 100dvh;
+
+  padding: 24px;
+
+  display: flex;
+  flex-direction: column;
+
+  background: #fff;
+
+  box-shadow:
+    -20px 0 60px rgba(0, 0, 0, 0.18);
+
+  transform: translateX(105%);
+  transition: transform 260ms ease;
+}
+
+.enquiry-drawer.open {
+  transform: translateX(0);
+}
+
+body.enquiry-drawer-open {
+  overflow: hidden;
+}
+
+
+/* Drawer header */
+
+.enquiry-drawer-header {
+  padding-bottom: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  border-bottom: 1px solid var(--line);
+}
+
+.enquiry-drawer-header small {
+  color: var(--gold-deep);
+
+  font-size: 0.58rem;
+  font-weight: 700;
+
+  letter-spacing: 0.16em;
+}
+
+.enquiry-drawer-header h3 {
+  margin-top: 4px;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2rem;
+}
+
+.enquiry-drawer-close {
+  width: 42px;
+  height: 42px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+
+  color: var(--ink);
+  background: #f7f3eb;
+
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+
+/* Products inside drawer */
+
+.enquiry-drawer-items {
+  flex: 1;
+
+  padding: 18px 0;
+
+  overflow-y: auto;
+}
+
+.enquiry-list-item {
+  padding: 12px 0;
+
+  display: grid;
+
+  grid-template-columns:
+    64px
+    minmax(0, 1fr)
+    34px;
+
+  gap: 13px;
+  align-items: center;
+
+  border-bottom: 1px solid var(--line);
+}
+
+.enquiry-list-item img {
+  width: 64px;
+  height: 64px;
+
+  display: block;
+
+  object-fit: cover;
+
+  border-radius: 12px;
+  border: 1px solid var(--line);
+}
+
+.enquiry-list-item-info {
+  display: grid;
+  gap: 4px;
+}
+
+.enquiry-list-item-info strong {
+  color: var(--ink);
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.15rem;
+}
+
+.enquiry-list-item-info small {
+  color: var(--muted);
+
+  font-size: 0.60rem;
+  letter-spacing: 0.08em;
+}
+
+.remove-enquiry-item {
+  width: 32px;
+  height: 32px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+
+  color: #777;
+  background: #f4f1ea;
+
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+
+/* Empty state */
+
+.enquiry-empty {
+  padding: 70px 15px;
+
+  text-align: center;
+}
+
+.enquiry-empty span {
+  color: var(--gold);
+  font-size: 2.7rem;
+}
+
+.enquiry-empty h4 {
+  margin: 10px 0 5px;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.5rem;
+}
+
+.enquiry-empty p {
+  color: var(--muted);
+  font-size: 0.74rem;
+}
+
+
+/* Drawer bottom */
+
+.enquiry-drawer-footer {
+  padding-top: 18px;
+
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr;
+  gap: 10px;
+
+  border-top: 1px solid var(--line);
+}
+
+.clear-enquiry-btn,
+.send-enquiry-btn {
+  min-height: 48px;
+
+  padding: 10px;
+
+  border-radius: 11px;
+
+  font-size: 0.70rem;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.clear-enquiry-btn {
+  border: 1px solid var(--line);
+
+  color: var(--ink);
+  background: transparent;
+}
+
+.send-enquiry-btn {
+  color: #fff;
+  background: var(--gold-deep);
+}
+
+
+/* Mobile */
+
+@media (max-width: 520px) {
+
+  .catalogue-action-buttons {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+
+  .catalogue-action-buttons button {
+    padding: 9px 7px;
+    font-size: 0.64rem;
+  }
+
+  .enquiry-list-fab {
+    right: 15px;
+    bottom: 82px;
+
+    min-height: 44px;
+
+    padding: 0 14px;
+  }
+
+  .enquiry-drawer {
+    width: 100%;
+    padding: 20px 16px;
+  }
+
+  .enquiry-drawer-footer {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+/* =========================================
+   FINAL FOOTER LOGO / TEXT SPACING FIX
+========================================= */
+
+footer .footer-grid a.brand {
+  display: block !important;
+  margin-bottom: 0 !important;
+}
+
+footer .footer-grid a.brand .brand-mark,
+footer .footer-grid a.brand .brand-logo-mark {
+  margin: 0 0 12px 0 !important;
+}
+
+footer .footer-grid a.brand .brand-copy {
+  display: grid !important;
+  margin: 0 !important;
+}
+
+footer .footer-grid a.brand .brand-copy strong {
+  display: block;
+  margin: 0 !important;
+  line-height: 1.1;
+}
+
+footer .footer-grid a.brand .brand-copy small {
+  display: block;
+  margin-top: 5px !important;
+}
+

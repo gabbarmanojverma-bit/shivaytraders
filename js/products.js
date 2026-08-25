@@ -51,4 +51,13 @@ window.SHIVAY_PRODUCTS = [
   { name: "Dhaga", code: "ST-DH-001", category: "Dhaga", image: "assets/products/dhaga/st-dh-001.webp", alt: "Dhaga wholesale product ST-DH-001 - Shivay Traders" },
   { name: "Dhaga", code: "ST-DH-002", category: "Dhaga", image: "assets/products/dhaga/st-dh-002.webp", alt: "Dhaga wholesale product ST-DH-002 - Shivay Traders" },
 
+// Chain
+{
+  name: "Chain",
+  code: "ST-CH-001",
+  category: "Chain",
+  image: "assets/products/chain/st-ch-001.webp",
+  alt: "Chain wholesale product ST-CH-001 - Shivay Traders"
+},
+  
 ];

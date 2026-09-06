@@ -1,10 +1,93 @@
 window.SHIVAY_PRODUCTS = [
   // Bangles
   { name: "Bangles", code: "ST-BG-001", category: "Bangles", image: "assets/products/bangles/st-bg-001.webp", alt: "Bangles wholesale product ST-BG-001 - Shivay Traders" },
+  { name: "Bangles", code: "ST-BG-002", category: "Bangles", image: "assets/products/bangles/st-bg-002.webp", alt: "Bangles wholesale product ST-BG-002 - Shivay Traders" },
+
+{
+  name: "Bangles",
+  code: "ST-BG-003",
+  category: "Bangles",
+  image: "assets/products/bangles/st-bg-003.webp",
+  alt: "Bangles wholesale product ST-BG-003 - Shivay Traders"
+},
+{
+  name: "Bangles",
+  code: "ST-BG-004",
+  category: "Bangles",
+  image: "assets/products/bangles/st-bg-004.webp",
+  alt: "Bangles wholesale product ST-BG-004 - Shivay Traders"
+},
+{
+  name: "Bangles",
+  code: "ST-BG-005",
+  category: "Bangles",
+  image: "assets/products/bangles/st-bg-005.webp",
+  alt: "Bangles wholesale product ST-BG-005 - Shivay Traders"
+},
+{
+  name: "Bangles",
+  code: "ST-BG-006",
+  category: "Bangles",
+  image: "assets/products/bangles/st-bg-006.webp",
+  alt: "Bangles wholesale product ST-BG-006 - Shivay Traders"
+},
+{
+  name: "Bangles",
+  code: "ST-BG-007",
+  category: "Bangles",
+  image: "assets/products/bangles/st-bg-007.webp",
+  alt: "Bangles wholesale product ST-BG-007 - Shivay Traders"
+},
+{
+  name: "Bangles",
+  code: "ST-BG-008",
+  category: "Bangles",
+  image: "assets/products/bangles/st-bg-008.webp",
+  alt: "Bangles wholesale product ST-BG-008 - Shivay Traders"
+},
+{
+  name: "Bangles",
+  code: "ST-BG-009",
+  category: "Bangles",
+  image: "assets/products/bangles/st-bg-009.webp",
+  alt: "Bangles wholesale product ST-BG-009 - Shivay Traders"
+},
+{
+  name: "Bangles",
+  code: "ST-BG-010",
+  category: "Bangles",
+  image: "assets/products/bangles/st-bg-010.webp",
+  alt: "Bangles wholesale product ST-BG-010 - Shivay Traders"
+},
+{
+  name: "Bangles",
+  code: "ST-BG-011",
+  category: "Bangles",
+  image: "assets/products/bangles/st-bg-011.webp",
+  alt: "Bangles wholesale product ST-BG-011 - Shivay Traders"
+},
+{
+  name: "Bangles",
+  code: "ST-BG-013",
+  category: "Bangles",
+  image: "assets/products/bangles/st-bg-013.webp",
+  alt: "Bangles wholesale product ST-BG-013 - Shivay Traders"
+},
+{
+  name: "Bangles",
+  code: "ST-BG-014",
+  category: "Bangles",
+  image: "assets/products/bangles/st-bg-014.webp",
+  alt: "Bangles wholesale product ST-BG-014 - Shivay Traders"
+},
 
 
   // Bracelets
   { name: "Bracelet", code: "ST-BR-001", category: "Bracelets", image: "assets/products/bracelets/st-br-001.webp", alt: "Bracelet wholesale product ST-BR-001 - Shivay Traders" },
+  { name: "Bracelet", code: "ST-BR-002", category: "Bracelets", image: "assets/products/bracelets/st-br-002.webp", alt: "Bracelet wholesale product ST-BR-002 - Shivay Traders" },
+  { name: "Bracelet", code: "ST-BR-003", category: "Bracelets", image: "assets/products/bracelets/st-br-003.webp", alt: "Bracelet wholesale product ST-BR-003 - Shivay Traders" },
+  { name: "Bracelet", code: "ST-BR-004", category: "Bracelets", image: "assets/products/bracelets/st-br-004.webp", alt: "Bracelet wholesale product ST-BR-004 - Shivay Traders" },
+
 
   // Mala
   { name: "Mala", code: "ST-ML-001", category: "Mala", image: "assets/products/mala/st-ml-001.webp", alt: "Mala wholesale product ST-ML-001 - Shivay Traders" },
@@ -50,6 +133,7 @@ window.SHIVAY_PRODUCTS = [
   // Dhaga
   { name: "Dhaga", code: "ST-DH-001", category: "Dhaga", image: "assets/products/dhaga/st-dh-001.webp", alt: "Dhaga wholesale product ST-DH-001 - Shivay Traders" },
   { name: "Dhaga", code: "ST-DH-002", category: "Dhaga", image: "assets/products/dhaga/st-dh-002.webp", alt: "Dhaga wholesale product ST-DH-002 - Shivay Traders" },
+  { name: "Dhaga", code: "ST-DH-003", category: "Dhaga", image: "assets/products/dhaga/st-dh-003.webp", alt: "Dhaga wholesale product ST-DH-003 - Shivay Traders" },
 
 // Chain
 {
